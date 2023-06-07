@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --Cyan: #2bb3b1;
+    --light-Cyan: #4abebd;
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray);
+}
+main {
+    max-width: 625px;
+    margin: 2rem;
+    border-radius: 10px;
+}
+.community {
+    background-color: white;
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+.community .title {
+    color: var(--Cyan);
+    font-weight: 700;
+}
+.trail {
+    color: var(--Bright-Yellow);
+}
+.discription {
+    color: var(--Grayish-Blue);
+    line-height: 1.7;
+    font-size: 14px;
+}
+.subs {
+    background-color: var(--Cyan);
+    color: white;
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+.price {
+    display: flex;
+}
+.amount {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.month {
+    display: grid;
+    place-content: center;
+    color: var(--Light-Gray);
+    font-size: 14px;
+}
+.subs button {
+    border: none;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background: var(--Bright-Yellow);
+}
+.about {
+    background-color: var(--light-Cyan);
+    color: white;
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+.benefits {
+    line-height: 1.7;
+    font-size: 14px;
+}
+@media (min-width: 767px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about,
+    .subs {
+        width: 50%;
+    }
+}
